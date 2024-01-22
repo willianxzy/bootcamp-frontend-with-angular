@@ -1,27 +1,30 @@
 body {
     background: #f7f7f7;
+    font-family: verdana;
 }
-
-#title, .subtitle {
-    color: #505050;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+#title {
     font-size: 40px;
+    font-family: verdana;
+    padding: 5px 0 0;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: overline;
 }
 .post-title {
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 22px;
     margin:2px 5px;
-}
-#title {
-    padding: 5px 0 0;
-    border-radius: 5px;
+    text-decoration: underline;
 }
 .subtitle {
     margin: 0 0 8px;
+    color: #505050;
 }
 .post-content {
     margin: 0px 5px 20px;
+    text-transform: capitalize;
 }
 .baseboard {
     border-radius: 5px;
@@ -29,6 +32,7 @@ body {
 .base-content {
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: lowercase;
 }
 .img001 {
     border-radius: 8px;
@@ -39,9 +43,13 @@ body {
 }
 .desc-img {
     margin: 7px 50px 35px;
+    font-style: italic;
 }
 .post {
     border: 3px solid black;
     border-radius: 5px;
     background-color: aliceblue;
+}
+a {
+    text-decoration: line-through;
 }
