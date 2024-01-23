@@ -24,15 +24,15 @@ body {
 }
 .post-content {
     margin: 0px 5px 20px;
-    text-transform: capitalize;
+    text-transform: lowercase;
 }
 .baseboard {
     border-radius: 5px;
 }
 .base-content {
-    margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-transform: lowercase;
+    margin: 5px 0 0 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
 }
 .img001 {
     border-radius: 8px;
@@ -42,7 +42,7 @@ body {
 	box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
 }
 .desc-img {
-    margin: 7px 50px 35px;
+    padding: 7px 50px 35px;
     font-style: italic;
 }
 .post {
@@ -51,5 +51,13 @@ body {
     background-color: aliceblue;
 }
 a {
-    text-decoration: line-through;
+    text-decoration: underline;
+    color: cornflowerblue;
+}
+.contacts-list {
+    list-style-type: none;
+    padding: 5px;
+}
+ul {
+    margin: 0;
 }
