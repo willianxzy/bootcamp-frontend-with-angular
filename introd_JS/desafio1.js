@@ -9,9 +9,9 @@ Você terá 3 variáveis. Sendo elas:
 Imprima no console o valor que será gasto para realizar essa viagem.
 */
 
-let precomb = 5.94;
-let gastcomb = 28;
-const distkm = 250;
+let precComb = 5.94;
+let gastComb = 28;
+const distKm = 250;
 
-const resultado = distkm / gastcomb * precomb;
-console.log('R$', resultado);
+const gastoGas = distKm / gastComb * precComb;
+console.log('R$', gastoGas.toFixed(2));
