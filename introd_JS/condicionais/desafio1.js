@@ -13,7 +13,7 @@ Imprima no console o valor que será gasto para realizar essa viagem.*/
 const precoEtanol = 4.15;
 const precoGasolina = 5.94;
 const mediaCarro = 12; 
-const tipoCombustivel = 'gasolina';
+const tipoCombustivel = 'gasolina'; //Para conseguirmos alterar entre gasolina e etanol, devemos alterar essa variável para obter o resultado do combustível desejado. 
 const distKm = 250;
 
 const gasolina = distKm / mediaCarro * precoGasolina; 
@@ -23,4 +23,4 @@ if (tipoCombustivel === 'gasolina') {
     console.log('Gasto da viagem utilizando gasolina será: R$',gasolina.toFixed(2));
 } else {
     console.log('Gasto da viagem utilizando etanol será: R$',etanol.toFixed(2));
-} 
+}
