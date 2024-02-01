@@ -14,3 +14,11 @@ const numero = 10; /*Aqui nessa variável vamos declarar o nosso número que que
 const numeroPar = (numero % 2) === 0; 
 /* Portanto aqui criamos uma variável chamada (numeroPar) em que nela se pega o resultado da variável (número) e divide o resto da divisão(simbolo de porcentagem) por 2 e verificamos se ele é igual a 0, se for é true, se não for é false.*/
 console.log(numeroPar);
+
+//Aqui vamos utilizar o operador if, pedimos que: se o número for par, que emita "executar", se não for, não emitir nada.
+if (numeroPar) {
+    console.log('Número Par');
+} else {
+    console.log('Número Impar');
+}
+// Utilizando o operador else, iremos pedir que: se não for número par, emita "Número Impar".
