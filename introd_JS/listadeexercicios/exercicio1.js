@@ -12,6 +12,7 @@ const nota2= 7;
 const nota3= 9;
 
 const media = (nota1 + nota2 + nota3) / 3;
+    console.log(media.toFixed(2));
 
 if (media < 5) {
     console.log('Você está reprovado!');
