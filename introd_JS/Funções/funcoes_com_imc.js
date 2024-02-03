@@ -1,4 +1,3 @@
-
 function calcularImc(pesoPessoa, _alturaPessoa) {
     return pesoPessoa / Math.pow(_alturaPessoa, 2);
 }
@@ -27,3 +26,14 @@ function main() {
 }
 
 main();
+
+//exemplo de função invocada imediatamente 
+(function main() {
+    const pesoPessoa = 56;
+    const alturaPessoa = 1.73;
+    
+    const imc = calcularImc(pesoPessoa, alturaPessoa);
+    console.log(calcularImc(pesoPessoa, alturaPessoa));
+    console.log(classificadorImc(imc));
+})();
+ //desta maneira vai fazer com que a função seja criada e executada imediatamente, sem precisar de invocar ela em baixo como no código acima da função (main).
