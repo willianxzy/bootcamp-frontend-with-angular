@@ -16,19 +16,3 @@ alunos.shift(); //Fazemos a mesma função anterior, porém com o primeiro item 
 console.log(alunos);
 console.log(alunos[3]); //solicitamos que imprima o item 0 da nossa lista na variável alunos.
 //item não existente na nossa lista, terminal imprime como undefined.
-
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------
-//ESTRUTURAS DE REPETIÇÃO
-
-const notas = [];
-
-notas.push(5);
-notas.push(4);
-notas.push(7);
-notas.push(8);
-notas.push(10);
-console.log();
-
-for (let i = 0; i < notas.length; i++) {
-    console.log(notas[i]);
-}
