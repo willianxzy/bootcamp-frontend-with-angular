@@ -33,4 +33,5 @@ fetch(url)
         }
     })
     .catch((error) => console.error(error))
+    .finally(console.log('Requisição Finalizada!'))
     
