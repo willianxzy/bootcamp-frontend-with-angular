@@ -155,3 +155,11 @@
     width: 100%;
     padding: 1rem;
 }
+
+.paginacao button {
+    padding: 0.5rem;
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+}
