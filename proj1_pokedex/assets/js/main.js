@@ -9,11 +9,11 @@ function loadMoreItens (offset, limit) {
         const newHtml = pokemons.map((pokemon) =>  
         `
     <a
-        href="pokeCardDetails.html"
+        href="./pokeCardDetails.html"
         onclick="setPokemonProfile(
             '${pokemon.number}'
         , '${pokemon.name}'
-        ,'${pokemon.image}'
+        ,'${pokemon.photo}'
         , '${pokemon.types}'
         , '${pokemon.abilities}'
         , '${pokemon.weight}'
