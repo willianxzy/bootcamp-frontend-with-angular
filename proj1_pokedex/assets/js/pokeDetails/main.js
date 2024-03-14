@@ -18,7 +18,7 @@ const loadPokemonProfile = () => {
               <a href="javascript:history.back()"
               > <i class="fa-solid fa-chevron-left" style="color: #000"></i
               ></a>
-            <img src="https://user-images.githubusercontent.com/29473781/180619084-a56960ab-7efa-4e34-9d33-4e3e581d62ff.png" alt="pokemon logo"/>
+            <img class="logo" src="https://user-images.githubusercontent.com/29473781/180619084-a56960ab-7efa-4e34-9d33-4e3e581d62ff.png" alt="pokemon logo"/>
           </header>
              <div> 
              <h1 style="color:#000;">${pokemon.name}<h1>
