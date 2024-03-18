@@ -175,10 +175,35 @@
   display: flex;
   align-items: center;
   margin: auto;
-  float: center;
 }
 
 .titleAbout {
-  font-size: 20px;
-  margin: 1rem;
+  font-size: 23px;
+  margin: 15px 0 0 5px;
+}
+
+.titleWeight {
+  font-size: 23px;
+  margin: 15px 0 0 5px;
+}
+
+.titleHeight {
+  font-size: 23px;
+  margin: 15px 0 0 5px;
+}
+
+.titleShape {
+  font-size: 23px;
+  margin: 15px 0 0 5px;
+}
+
+.titleHabitat {
+  font-size: 23px;
+  margin: 15px 0 0 5px;
+}
+
+.pokeInformation p {
+  font-size: 18px;
+  margin: 18px 0 18px 7px;
+  text-transform: capitalize;
 }
