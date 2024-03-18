@@ -120,17 +120,19 @@
 }
 
 .pokeNumber {
-  align-items: right;
   text-align: right;
-  margin: auto;
-  padding: 1rem;
+  align-items: right;
+  padding: 0.250rem;
   font-size: 20px;
   color: white;
+  width: 50px;
+  float: right;
+  margin: 0 10px 0 0;
 }
 
 .pokeName {
-  margin: auto;
-  padding: 1rem;
+  margin: 0 0 0 1rem;
+  padding: 0.250rem;
   font-size: 50px;
   text-transform: capitalize;
   color: white;
@@ -142,7 +144,8 @@
   justify-content: left;
   align-items: center;
   width: 100%;
-  padding: 1rem;
+  padding: 0rem;
+  margin: 0 0 15px 1rem;
 }
 
 .buttonBack button {
@@ -151,22 +154,31 @@
   border: none;
   border-radius: 1rem;
   color: white;
-  margin: 1rem;
+  margin: 0;
 }
 .pokeTypes {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: left;
   justify-content: space-between;
-  padding: 0;
-  margin: auto;
   list-style: none;
-  padding: .25rem .5rem;
-  margin: .25rem 0;
+  margin: 0 0 0 30px;
   border-radius: 1rem;
-  text-align: center;
+  text-align: left;
   height: 26.3906px;
   width: 110px;
   background-color: white;
   opacity: 0.7;
+}
+
+.pokePhoto {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  float: center;
+}
+
+.titleAbout {
+  font-size: 20px;
+  margin: 1rem;
 }
