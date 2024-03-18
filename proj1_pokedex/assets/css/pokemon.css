@@ -9,6 +9,7 @@
 .grass {
     background: linear-gradient(to top, #49d0b0 20%, #65e2cb 100%);
     border-radius: 2rem;
+    height: 500px;
 }
 
 .fire {
@@ -119,6 +120,7 @@
 }
 
 .pokeNumber {
+  align-items: right;
   text-align: right;
   margin: auto;
   padding: 1rem;
@@ -150,4 +152,21 @@
   border-radius: 1rem;
   color: white;
   margin: 1rem;
+}
+.pokeTypes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: auto;
+  list-style: none;
+  padding: .25rem .5rem;
+  margin: .25rem 0;
+  border-radius: 1rem;
+  text-align: center;
+  height: 26.3906px;
+  width: 110px;
+  background-color: white;
+  opacity: 0.7;
 }

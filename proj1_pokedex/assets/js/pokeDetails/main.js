@@ -27,12 +27,10 @@ const loadPokemonProfile = () => {
             </header>
              <div class= "pokeNumber"> #${pokemon.number} </div>
              <h1 class="pokeName">${pokemon.name}</h1>
-             ${pokemon.types}
-             
+             <div class="pokeTypes"> ${pokemon.types} </div>
              <br><br><br>
              <div class="pokedescription"> ${about} <div>
              <br><br>
-             ${pokemon.types}
              <p>${weight} kg </p>
              <p>${height} cm </p>
              <p>${pokemon.shape}</p>
