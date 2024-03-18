@@ -29,13 +29,14 @@ const loadPokemonProfile = () => {
              <h1 class="pokeName">${pokemon.name}</h1>
              <div class="pokeTypes"> ${pokemon.types} </div>
              <br><br><br>
+             <img class="pokePhoto" src="${pokemon.image}" alt="${pokemon.name}'s appearance" />
+             <h2 class="titleAbout">About</h2>
              <div class="pokedescription"> ${about} <div>
              <br><br>
              <p>${weight} kg </p>
              <p>${height} cm </p>
              <p>${pokemon.shape}</p>
              <p>${pokemon.habitat}</p>
-             <img class="pokePhoto" src="${pokemon.image}" alt="${pokemon.name}'s appearance" />
              </div>
             </div>
         `;
