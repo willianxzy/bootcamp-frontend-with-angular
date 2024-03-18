@@ -94,5 +94,60 @@
 .logo {
     width: 300px;
     height: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
 }
 
+@media screen and (min-width: 380px) {
+  .pokemon-profile {
+      grid-template-columns: 1fr 1fr;
+  } 
+}
+
+@media screen and (min-width: 576px) {
+  .pokemon-profile {
+      grid-template-columns: 1fr 1fr 1fr ;
+  } 
+}
+
+@media screen and (min-width: 992px) {
+  .pokemon-profile {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  } 
+}
+
+.pokeNumber {
+  text-align: right;
+  margin: auto;
+  padding: 1rem;
+  font-size: 20px;
+  color: white;
+}
+
+.pokeName {
+  margin: auto;
+  padding: 1rem;
+  font-size: 50px;
+  text-transform: capitalize;
+  color: white;
+}
+
+.buttonBack {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.buttonBack button {
+  padding: 0.5rem;
+  background-color: #6c79db;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  margin: 1rem;
+}
