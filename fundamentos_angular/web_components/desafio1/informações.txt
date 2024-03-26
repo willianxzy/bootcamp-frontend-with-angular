@@ -1,2 +1,2 @@
 Desafio utilizando web components para imitar a noticia de que o darth vader está contratando devs frontends
-Baseado na imagem de assets/challenge-pic02.jpg
+Baseado na img de assets/challenge-pic02.jpg
