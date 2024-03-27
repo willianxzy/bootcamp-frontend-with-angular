@@ -1,26 +1,25 @@
-class TituloDinamico extends HTMLElement{
-    constructor() {
+class TituloDinamico extends HTMLElement {
+    constructor(){
         super();
 
         const shadow = this.attachShadow({mode: "open"});
-        
-        //base do component
+
+        //base component
         const componentRoot = document.createElement('h1');
         componentRoot.textContent = 'Willian';
 
-        //estilizar o component
+        //estilização component
         const style = document.createElement('style');
         style.textContent = `
         h1 {
-            color: red;
+            color: red; 
         }
         `;
 
-        //enviar para a shadow
+        //enviar p/ shadow
         shadow.appendChild(componentRoot);
         shadow.appendChild(style);
     };
 };
 
 customElements.define('titulo-dinamico', TituloDinamico);
-// sempre que for criar uma tag customizada precisamos adicionar o - para diferenciada das tags padrões do HTML.
