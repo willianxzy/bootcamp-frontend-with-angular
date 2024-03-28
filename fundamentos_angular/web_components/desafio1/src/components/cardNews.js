@@ -18,8 +18,8 @@ class CardNews extends HTMLElement {
         const cardRight = document.createElement("div");
 
         //atributos card left e card right
-        cardLeft.setAttribute("class", "cardLeft");
-        cardRight.setAttribute("class", "cardRight");
+        cardLeft.setAttribute("class", "card_left");
+        cardRight.setAttribute("class", "card_right");
 
         //pendurando os elementos filhos no componentRoot
         componentRoot.appendChild(cardLeft);
