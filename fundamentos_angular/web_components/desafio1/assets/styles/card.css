@@ -25,9 +25,10 @@
     flex-direction: column;
     justify-content: center;
 }
-.card_left > h1{
+.card_left > a{
     margin-top: 15px;
     font-size: 25px;
+    text-decoration: none;
 }
 
 .card_left > p {
