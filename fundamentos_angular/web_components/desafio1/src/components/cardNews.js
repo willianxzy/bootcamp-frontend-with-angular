@@ -54,13 +54,14 @@ class CardNews extends HTMLElement {
         const style = document.createElement("style")
             style.textContent = `
             *{
-                margin: 5px 0 0 0;
+                margin: 0;
                 padding: 0;
                 box-sizing: border-box;
                 font-family: 'Segoe UI', sans-serif;
             }
             
             .card{
+                margin: 5px 0 0 0;
                 width: 80%;
                 display: flex;
                 flex-direction: row;
@@ -88,6 +89,11 @@ class CardNews extends HTMLElement {
             
             .card_left > p {
                 color: grey;
+            }
+
+            .card_right > img {
+                weight: 100%;
+                height: 100%;
             }
             `;
         return style
