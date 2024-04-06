@@ -11,3 +11,10 @@ let dados2: Array<string> = ['Willian','Julio','Pedro'];
 let dados3: (string | number)[] = ['Willian', 19, 'Julio', 18, 'Pedro', 18];
 
 // Em TypeScript e JavaScript o | é lido como “ou”, sendo assim declaramos (string ou number). Portanto dessa maneira será aceito tanto string como number.
+
+// Trabalhanco com Tuplas
+// Semelhante ao array de multi types, porém seguindo a sequência em que declaramos. 
+
+let boleto: [string, number, number] = ['conta-agua', 179.67, 85374953]
+
+// portanto se deve seguir a seguência das declarações de acordo com nossa variável. Caso seja declarado de maneira diferente da qual declaramos em nossa variável irá dar erro.
