@@ -28,3 +28,13 @@ let listaAleatoria: any = ['willian', 18, 29, 'Joaozinho', true]
 let semNada: void 
 
 // na variavel void é um tipo de variável vazia, que não tem necessidade de retornar nada, somente executar a função que lhe foi declarada.
+
+// variaveis especiais
+// Nas variaveis especiais temos 2 tipos delas: 
+let nulo: null = null;
+
+// na variável null é permitido utilizar somente como uma variavel null, geralmente se usa para passar parâmetros em um configração padrão e que não queira que aquela configuração seja modificada pelo mundo externo.
+
+// Undefined: Utilizada com o mesmo intuito da variavel null.
+let indefinido: undefined = undefined;
+
