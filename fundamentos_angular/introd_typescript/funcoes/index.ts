@@ -16,3 +16,10 @@ function CallToPhone(phone: number | string): number | string {
 };
 
 console.log(CallToPhone(27997356785));
+
+// Funções Async (async = assíncronas)
+// Toda vez que temos um async significa que a função é assíncrona, ou seja, quando utilizamos o async estamos fazendo uma promise, e toda vez temos que declarar essa promise.
+
+async function getDataBase(id: number): Promise<string>  {
+	return 'felipe';
+}
