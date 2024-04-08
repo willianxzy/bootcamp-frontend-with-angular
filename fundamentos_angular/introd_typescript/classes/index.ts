@@ -16,6 +16,7 @@ class Character {
     };
 };
 
+// Sub-Classe da nossa classe Character
 class Magician extends Character{
     magicPoints: number;
 
