@@ -65,29 +65,49 @@ var funcionario = function () {
 // example2 decorators
 function apiVersion(version) {
     return function (target) {
-        Object.assign(target.prototype, { __version: version });
+        Object.assign(target.prototype, { __version: version, __name: 'Willian' });
     };
 }
 ;
+// attribute decorator
+function minLenght(lenght) {
+    return function (target, key) {
+        var _value = target[key];
+        var getter = function () { return _value; };
+        var setter = function (value) {
+            if (value.length < lenght) {
+                throw new Error("Tamanho menor do que ".concat(lenght));
+            }
+            else {
+                _value = value;
+            }
+        };
+        Object.defineProperty(target, key, {
+            get: getter,
+            set: setter,
+        });
+    };
+}
 var Api = function () {
-    var _classDecorators = [apiVersion];
-    var _classDescriptor;
-    var _classExtraInitializers = [];
-    var _classThis;
-    var Api = _classThis = /** @class */ (function () {
-        function Api_1() {
-        }
-        return Api_1;
-    }());
-    __setFunctionName(_classThis, "Api");
-    (function () {
-        var _metadata = typeof Symbol === "function" && Symbol.metadata ? Object.create(null) : void 0;
-        __esDecorate(null, _classDescriptor = { value: _classThis }, _classDecorators, { kind: "class", name: _classThis.name, metadata: _metadata }, null, _classExtraInitializers);
-        Api = _classThis = _classDescriptor.value;
-        if (_metadata) Object.defineProperty(_classThis, Symbol.metadata, { enumerable: true, configurable: true, writable: true, value: _metadata });
-        __runInitializers(_classThis, _classExtraInitializers);
-    })();
-    return Api = _classThis;
+    var _a;
+    var _name_decorators;
+    var _name_initializers = [];
+    var _name_extraInitializers = [];
+    return _a = /** @class */ (function () {
+            function Api(name) {
+                this.name = __runInitializers(this, _name_initializers, 'string');
+                __runInitializers(this, _name_extraInitializers);
+                this.name = name;
+            }
+            return Api;
+        }()),
+        (function () {
+            var _metadata = typeof Symbol === "function" && Symbol.metadata ? Object.create(null) : void 0;
+            _name_decorators = [minLenght(3)];
+            __esDecorate(null, null, _name_decorators, { kind: "field", name: "name", static: false, private: false, access: { has: function (obj) { return "name" in obj; }, get: function (obj) { return obj.name; }, set: function (obj, value) { obj.name = value; } }, metadata: _metadata }, _name_initializers, _name_extraInitializers);
+            if (_metadata) Object.defineProperty(_a, Symbol.metadata, { enumerable: true, configurable: true, writable: true, value: _metadata });
+        })(),
+        _a;
 }();
-var api = new Api();
-console.log(api);
+var api = new Api('usuários');
+console.log(api.name);
