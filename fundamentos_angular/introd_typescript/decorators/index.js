@@ -36,6 +36,7 @@ var __setFunctionName = (this && this.__setFunctionName) || function (f, name, p
     if (typeof name === "symbol") name = name.description ? "[".concat(name.description, "]") : "";
     return Object.defineProperty(f, "name", { configurable: true, value: prefix ? "".concat(prefix, " ", name) : name });
 };
+// example1 decorators
 function ExibirNome(target) {
     console.log(target);
 }
@@ -60,3 +61,33 @@ var funcionario = function () {
     })();
     return funcionario = _classThis;
 }();
+;
+// example2 decorators
+function apiVersion(version) {
+    return function (target) {
+        Object.assign(target.prototype, { __version: version });
+    };
+}
+;
+var Api = function () {
+    var _classDecorators = [apiVersion];
+    var _classDescriptor;
+    var _classExtraInitializers = [];
+    var _classThis;
+    var Api = _classThis = /** @class */ (function () {
+        function Api_1() {
+        }
+        return Api_1;
+    }());
+    __setFunctionName(_classThis, "Api");
+    (function () {
+        var _metadata = typeof Symbol === "function" && Symbol.metadata ? Object.create(null) : void 0;
+        __esDecorate(null, _classDescriptor = { value: _classThis }, _classDecorators, { kind: "class", name: _classThis.name, metadata: _metadata }, null, _classExtraInitializers);
+        Api = _classThis = _classDescriptor.value;
+        if (_metadata) Object.defineProperty(_classThis, Symbol.metadata, { enumerable: true, configurable: true, writable: true, value: _metadata });
+        __runInitializers(_classThis, _classExtraInitializers);
+    })();
+    return Api = _classThis;
+}();
+var api = new Api();
+console.log(api);
