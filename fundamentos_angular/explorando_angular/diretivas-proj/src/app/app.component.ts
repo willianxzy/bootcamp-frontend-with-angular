@@ -9,7 +9,4 @@ export class AppComponent {
   title = 'diretivas-proj';
   isAliveCard = false;
 
-  disposeCard() {
-    this.isAliveCard = false;
-  }
 }
