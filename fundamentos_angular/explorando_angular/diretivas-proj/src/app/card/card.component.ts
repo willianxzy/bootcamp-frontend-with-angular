@@ -36,6 +36,6 @@ export class CardComponent implements OnInit, OnDestroy {
   }
 
 removerManualmente(index: number) {
-  alert(index)
+  this.produtos.splice(index,1)
 }
 }
