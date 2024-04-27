@@ -8,6 +8,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 export class CardComponent implements OnInit, OnDestroy {
 
   produtos:string[] = []
+  menuType:string = '';
 
   constructor() {
     this.produtos = [
