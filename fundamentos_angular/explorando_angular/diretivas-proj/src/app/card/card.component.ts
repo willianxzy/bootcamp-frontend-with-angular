@@ -7,7 +7,18 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit, OnDestroy {
 
-  constructor() { }
+  produtos:string[] = []
+
+  constructor() {
+    this.produtos = [
+      'mouse',
+      'teclado',
+      'mousepad',
+      'fone',
+      'monitor',
+    ]
+  }
+
 
   ngOnInit(): void {
   }
@@ -15,4 +26,16 @@ export class CardComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     console.log('component destruído')
   }
+
+  adicionarItem() {
+    this.produtos.push('Willian')
+  };
+
+  removerItem(){
+    this.produtos.pop();
+  }
+
+ // removerManualmente(index: number) {
+   // alert(index)
+  //}
 }
