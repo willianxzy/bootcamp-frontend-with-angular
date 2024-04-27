@@ -35,7 +35,7 @@ export class CardComponent implements OnInit, OnDestroy {
     this.produtos.pop();
   }
 
- // removerManualmente(index: number) {
-   // alert(index)
-  //}
+removerManualmente(index: number) {
+  alert(index)
+}
 }

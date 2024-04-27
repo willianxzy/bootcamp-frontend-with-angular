@@ -2,8 +2,9 @@
 <p>card works!</p>
 
 <ul>
-  <li *ngFor="let p of produtos">
-{{ p }}
+  <li *ngFor="let p of produtos; let i = index"
+  (click)="removerManualmente(i)">
+{{ i }} - {{ p }}
   </li>
 </ul>
 
