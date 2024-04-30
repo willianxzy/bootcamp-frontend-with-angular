@@ -12,6 +12,7 @@ export class CompAtributosComponent implements OnInit {
   corLetra:string = "yellow";
   item:string = "";
   lista:string[] = [];
+  isEnableBlock:boolean = true;
 
   constructor() { }
 
