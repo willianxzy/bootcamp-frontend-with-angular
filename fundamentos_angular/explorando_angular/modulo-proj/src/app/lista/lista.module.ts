@@ -10,6 +10,10 @@ import { ListViewComponent } from './list-view/list-view.component';
     InputComponent,
     ListViewComponent
   ],
+  exports:[
+    InputComponent,
+    ListViewComponent
+  ],
   imports: [
     CommonModule
   ]
