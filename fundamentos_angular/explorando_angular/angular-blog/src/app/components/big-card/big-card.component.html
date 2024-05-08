@@ -1,7 +1,7 @@
 <div class="container__big-card">
   <div class="big-card__photo">
     <img
-    src="https://i.guim.co.uk/img/media/9b7412a06451584d8e594c9d08b3cd0623d23d02/0_11_2158_1116/master/2158.jpg?width=465&dpr=1&s=none"
+    src="{{ photoCover }}"
     alt="big-card__photo"
     height="250px"
     width="396px"
@@ -10,7 +10,7 @@
   <div class="big-card__title">
     <h1>
       <a href="#">
-        Saiu a nova versão do Angular
+        {{ cardTitle }}
       </a>
     </h1>
   </div>
@@ -18,7 +18,7 @@
 
       <p>
         <a href="#">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam vel in totam tempora sequi blanditiis, explicabo porro et maiores ex ut ipsum quidem soluta dolor facilis, sapiente nemo consectetur! Sunt!
+          {{ cardDescription }}
         </a>
       </p>
   </div>
