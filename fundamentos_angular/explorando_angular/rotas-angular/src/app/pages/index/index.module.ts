@@ -8,6 +8,9 @@ import { TitleComponent } from './title/title.component';
   declarations: [
     TitleComponent
   ],
+  exports:[
+    TitleComponent
+  ],
   imports: [
     CommonModule
   ]
