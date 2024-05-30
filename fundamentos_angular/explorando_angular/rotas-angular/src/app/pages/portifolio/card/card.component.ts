@@ -10,7 +10,7 @@ export class CardComponent implements OnInit {
 
   constructor(
     private activeRoute: ActivatedRoute,
-    //private navegador: Router
+    private navegador: Router
   ) {
 
     // localhost:4200/portfolio/{1}
@@ -25,9 +25,9 @@ export class CardComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    //setInterval(()=>{
-      //this.navegador.navigate(['/'])
-    //}, 10000)
+    setInterval(()=>{
+      this.navegador.navigate(['/'])
+    }, 10000)
   }
 
 }
