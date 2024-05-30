@@ -18,10 +18,10 @@ export class CardComponent implements OnInit {
       res => console.log(res)
     )
 
-    // localhost:4200/potfolio/1?name=willian&token=123
-    //this.activeRoute.queryParams.subscribe(
-      //res => console.log(res)
-    //)
+    //localhost:4200/potfolio/1?name=willian&token=123
+    this.activeRoute.queryParams.subscribe(
+      res => console.log(res)
+    )
   }
 
   ngOnInit(): void {
