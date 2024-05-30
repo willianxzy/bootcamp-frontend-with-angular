@@ -14,12 +14,12 @@ export class CardComponent implements OnInit {
   ) {
 
     // localhost:4200/portfolio/{1}
-    this.activeRoute.params.subscribe(
+    this.activeRoute.firstChild?.params.subscribe(
       res => console.log(res)
     )
 
     //localhost:4200/potfolio/1?name=willian&token=123
-    this.activeRoute.queryParams.subscribe(
+    this.activeRoute.firstChild?.queryParams.subscribe(
       res => console.log(res)
     )
   }
