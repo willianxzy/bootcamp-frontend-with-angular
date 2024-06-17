@@ -7,14 +7,14 @@ import { environment } from 'src/environments/environment';
 })
 export class PokemonService {
   private baseURL:string = "";
- // private pokeData:any;
+  private pokeData:any;
 
   constructor(private http: HttpClient) {
     this.baseURL= environment.pokeApi;
    }
 
-    //getPokemonName(pokemonName:String){
-    // this.pokeData = this.http.get(`${this.baseURL}${pokemonName}`)
-    // console.log(this.pokeData);
+    getPokemonName(pokemonName:String){
+     this.pokeData = this.http.get(`${this.baseURL}${pokemonName}`)
+     console.log(this.pokeData);
     }
 }
